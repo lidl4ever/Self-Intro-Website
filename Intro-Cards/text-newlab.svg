@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="182px" viewBox="0 0 165 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop HD</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.9289322,8 L18,0.928932188 L25.0710678,8 L157.005431,8 C160.31614,8 163,10.6844237 163,13.9956247 L163,174.004375 C163,177.315667 160.306826,180 157.005431,180 L5.99456917,180 C2.68386003,180 0,177.315576 0,174.004375 L0,13.9956247 C0,10.6843326 2.69317429,8 5.99456917,8 L10.9289322,8 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-374.000000, -746.000000)">
+        <g id="Comment-Down-Copy-2" transform="translate(375.000000, 747.000000)">
+            <g id="Combined-Shape">
+                <use fill="#FCFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#4E78C6" stroke-width="1" d="M10.7218254,7.5 L18,0.221825407 L25.2781746,7.5 L157.005431,7.5 C160.592272,7.5 163.5,10.4082707 163.5,13.9956247 L163.5,174.004375 C163.5,177.588696 160.586085,180.5 157.005431,180.5 L5.99456917,180.5 C2.40772823,180.5 -0.5,177.591729 -0.5,174.004375 L-0.5,13.9956247 C-0.5,10.4113038 2.41391534,7.5 5.99456917,7.5 L10.7218254,7.5 Z"></path>
+                <path stroke="#FFFFF8" stroke-width="3" d="M18,3.05025253 L11.5502525,9.5 L5.99456917,9.5 C3.51808361,9.5 1.5,11.516275 1.5,13.9956247 L1.5,174.004375 C1.5,176.487243 3.51238126,178.5 5.99456917,178.5 L157.005431,178.5 C159.481916,178.5 161.5,176.483725 161.5,174.004375 L161.5,13.9956247 C161.5,11.5127567 159.487619,9.5 157.005431,9.5 L24.4497475,9.5 L18,3.05025253 Z"></path>
+            </g>
+            <text id="A-ui/ux-design-studi" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="-0.200000003" fill="#687CAF">
+                <tspan x="15" y="37">A ui/ux design studio I </tspan>
+                <tspan x="15" y="55">founded in 2017.</tspan>
+                <tspan x="15" y="73"></tspan>
+                <tspan x="15" y="91" font-family="Arial-BoldMT, Arial" font-weight="bold">Skill required:</tspan>
+                <tspan x="105.358398" y="91"> </tspan>
+                <tspan x="15" y="109">branding, ui/ux, </tspan>
+                <tspan x="15" y="127">mockup,visual design,  </tspan>
+                <tspan x="15" y="145">3d modeling, </tspan>
+                <tspan x="15" y="163">wireframe, prototype</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

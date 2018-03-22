@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="166px" height="162px" viewBox="0 0 166 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop HD</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.0710678,7 L18.0710678,5.68434189e-14 L25.0710678,7 L157.438006,7 C160.750842,7 163.436426,9.68655901 163.436426,13.0053967 L163.436426,152.994603 C163.436426,156.311292 160.752863,159 157.438006,159 L5.9984205,159 C2.68558434,159 0,156.313441 0,152.994603 L0,13.0053967 C0,9.6887077 2.6835628,7 5.9984205,7 L11.0710678,7 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-660.000000, -746.000000)">
+        <g id="Comment-Down" transform="translate(661.000000, 748.000000)">
+            <g id="Combined-Shape">
+                <use fill="#FCFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#4E78C6" stroke-width="1" d="M10.863961,6.5 L18.0710678,-0.707106781 L25.2781746,6.5 L157.438006,6.5 C161.027828,6.5 163.936426,9.41126111 163.936426,13.0053967 L163.936426,152.994603 C163.936426,156.587978 161.028464,159.5 157.438006,159.5 L5.9984205,159.5 C2.40859806,159.5 -0.5,156.588739 -0.5,152.994603 L-0.5,13.0053967 C-0.5,9.41202221 2.40796233,6.5 5.9984205,6.5 L10.863961,6.5 Z"></path>
+                <path stroke="#FFFFF8" stroke-width="3" d="M18.0710678,2.12132034 L11.6923882,8.5 L5.9984205,8.5 C3.51315694,8.5 1.5,10.5159676 1.5,13.0053967 L1.5,152.994603 C1.5,155.484579 3.51357749,157.5 5.9984205,157.5 L157.438006,157.5 C159.923269,157.5 161.936426,155.484032 161.936426,152.994603 L161.936426,13.0053967 C161.936426,10.5154211 159.922849,8.5 157.438006,8.5 L24.4497475,8.5 L18.0710678,2.12132034 Z"></path>
+            </g>
+            <text id="At-minimal-viable-pr" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="-0.200000003" fill="#687CAF">
+                <tspan x="15" y="36">At minimal viable </tspan>
+                <tspan x="15" y="54">product stage to try </tspan>
+                <tspan x="15" y="72">things out.</tspan>
+                <tspan x="15" y="90"></tspan>
+                <tspan x="15" y="108" font-family="Arial-BoldMT, Arial" font-weight="bold">Skill required: </tspan>
+                <tspan x="109.048047" y="108"></tspan>
+                <tspan x="15" y="126">ui/ ux, css, visual </tspan>
+                <tspan x="15" y="144">design, wireframe, </tspan>
+            </text>
+        </g>
+    </g>
+</svg>

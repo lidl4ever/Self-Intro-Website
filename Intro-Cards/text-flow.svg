@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="161px" viewBox="0 0 165 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop HD</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.9289322,7.07106781 L18,0 L25.0710678,7.07106781 L157.005431,7.07106781 C160.31614,7.07106781 163,9.75477826 163,13.0807985 L163,151.990269 C163,155.309352 160.306826,158 157.005431,158 L5.99456917,158 C2.68386003,158 0,155.31629 0,151.990269 L0,13.0807985 C0,9.76171589 2.69317429,7.07106781 5.99456917,7.07106781 L10.9289322,7.07106781 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-946.000000, -746.000000)">
+        <g id="Comment-Down-Copy-3" transform="translate(947.000000, 748.000000)">
+            <g id="Combined-Shape">
+                <use fill="#FCFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#4E78C6" stroke-width="1" d="M10.7218254,6.57106781 L18,-0.707106781 L25.2781746,6.57106781 L157.005431,6.57106781 C160.594868,6.57106781 163.5,9.4812252 163.5,13.0807985 L163.5,151.990269 C163.5,155.58211 160.586348,158.5 157.005431,158.5 L5.99456917,158.5 C2.4051321,158.5 -0.5,155.589843 -0.5,151.990269 L-0.5,13.0807985 C-0.5,9.48895761 2.41365223,6.57106781 5.99456917,6.57106781 L10.7218254,6.57106781 Z"></path>
+                <path stroke="#FFFFF8" stroke-width="3" d="M18,2.12132034 L11.5502525,8.57106781 L5.99456917,8.57106781 C3.51887293,8.57106781 1.5,10.592877 1.5,13.0807985 L1.5,151.990269 C1.5,154.486046 3.51047613,156.5 5.99456917,156.5 L157.005431,156.5 C159.481127,156.5 161.5,154.478191 161.5,151.990269 L161.5,13.0807985 C161.5,10.5850217 159.489524,8.57106781 157.005431,8.57106781 L24.4497475,8.57106781 L18,2.12132034 Z"></path>
+            </g>
+            <text id="At-resarch-&amp;-mockup" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="-0.200000003" fill="#687CAF">
+                <tspan x="15" y="36">At resarch &amp; mockup </tspan>
+                <tspan x="15" y="54">stage. </tspan>
+                <tspan x="15" y="72"></tspan>
+                <tspan x="15" y="90" font-family="Arial-BoldMT, Arial" font-weight="bold">Skill required: </tspan>
+                <tspan x="109.048047" y="90"></tspan>
+                <tspan x="15" y="108">html/css, visualize </tspan>
+                <tspan x="15" y="126">data,info graphics ui/</tspan>
+                <tspan x="15" y="144">ux, research</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

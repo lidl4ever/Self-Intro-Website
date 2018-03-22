@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro-YJShen</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <script src="scripts/lottie.js"></script>
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    <!--Bootstrap 4-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  </head>
+
+
+  <body>
+  <div id="container">
+    <!-- Load Babel -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+      <!-- Your custom script here -->
+  <script type="text/babel">
+      // VARIABLES
+    const magicalUnderlines = Array.from(document.querySelectorAll('.underline--magical'));
+
+    const gradientAPI = 'https://gist.githubusercontent.com/wking-io/3e116c0e5675c8bcad8b5a6dc6ca5344/raw/4e783ce3ad0bcd98811c6531e40256b8feeb8fc8/gradient.json';
+
+    // HELPER FUNCTIONS
+
+    // 1. Get random number in range. Used to get random index from array.
+    const randNumInRange = max => Math.floor(Math.random() * (max - 1));
+
+    // 2. Merge two separate array values at the same index to
+    // be the same value in new array.
+    const mergeArrays = (arrOne, arrTwo) => arrOne
+      .map((item, i) => `${item} ${arrTwo[i]}`)
+      .join(', ');
+
+    // 3. Curried function to add a background to array of elms
+    const addBackground = (elms) => (color) => {
+      elms.forEach(el => {
+        el.style.backgroundImage = color;
+      });
+    }
+    // 4. Function to get data from API
+    const getData = async(url) => {
+      const response = await fetch(url);
+      const data = await response.json();
+      return data.data;
+    }
+
+    // 5. Partial Application of addBackground to always apply
+    // background to the magicalUnderlines constant
+    const addBackgroundToUnderlines = addBackground(magicalUnderlines);
+
+    // GRADIENT FUNCTIONS
+
+    // 1. Build CSS formatted linear-gradient from API data
+    const buildGradient = (obj) => `linear-gradient(${obj.direction}, ${mergeArrays(obj.colors, obj.positions)})`;
+
+    // 2. Get single gradient from data pulled in array and
+    // apply single gradient to a callback function
+    const applyGradient = async(url, callback) => {
+      const data = await getData(url);
+      const gradient = buildGradient(data[randNumInRange(data.length)]);
+      callback(gradient);
+    }
+
+    // RESULT
+    applyGradient(gradientAPI, addBackgroundToUnderlines);
+
+  </script>
+      <div id="rectangle-1" class="container-fluid">
+        <div id="title">
+          <p>Hi, I'm <span class="underline--magical">YiJie Shen</span></p>
+        </div>
+
+        <div id="text">
+          <p>I do <span class="underline--magical">UI/UX design</span>, front-end/website design, art and electronic music. I like defying traditional role boundaries, and I enjoy doing it!</p>
+        </div>
+
+      </div>
+
+
+      <div id="about">
+        <div id="about-text" >
+          <h2>About this website</h2>
+          <p>I set up this website from scratch for introducing my skill of UI/UX design and HTML5/CSS3 including 3 ongoing websites. This website is for reference, <span class="underline--magical">if you haven't check my portfolio</span>, please check it below</p>
+          <a target="_blank" href="https://goo.gl/epMFNP" class="button rollover">
+            <span class="roll-text">Here</span>
+            <span class="roll-text">Let's Go</span>
+          </a>
+        </div>
+        <div class="text-row">
+          <div class="column-1" class="cols cols-12">
+            <h2>Skill required</h2>
+            <li>HTML5/CSS3</li>
+            <li>JQuery</li>
+            <li>Responsive design</li>
+            <li>Grid Design</li>
+            <li>Motion Graphic</li>
+          </div>
+
+
+          <div class="column-1">
+            <h2>Applications</h2>
+            <li>Sketch</li>
+            <li>Balsamiq Mockups 3</li>
+            <li>Zepplin</li>
+            <li>Flinto</li>
+            <li>After Effects CC18'</li>
+          </div>
+        </div>
+      </div>
+
+      <div id="progress">
+          <p class="title-s ">Web Projects in Progress</p>
+          <div class="subtitle"><p>Please notice they are still in the <span class="underline--magical">process of prototype</span> for testing out ideas and design. In these projects, my role is both designer and front-end engeneer.</p></div>
+        <div id="progress-container">
+          <div class="card">
+            <a target="_blank" href="http://lab.yjshen.org"><img src="https://i.imgur.com/FG4cLBx.png" alt="me" class="card-image" />
+
+            <div class="card-details">
+              <h2>NewLab</h2>
+              <h3>UI/UX design studio</h3>
+              <p>NewLab is a design studio I founded with my partner. Mainly design UI/UX for any plateforms, including information design and visual design.</p>
+            </div></a>
+          </div>
+
+          <div class="card">
+            <a target="_blank" href="http://news.yjshen.org"><img src="creatorhub_2.png" alt="" class="card-image" />
+
+          <div class="card-details">
+            <h2>CreatorHub</h2>
+            <h3>A comprehensive plateform for creators</h3>
+            <p>This is a platform for artists, designers, makers, musician. Creators lacking of a no-boundry platform for gathering. News, open calls, and most importantly you can buddy up people from different areas.</p>
+          </div></a>
+        </div>
+
+        <div class="card">
+          <a target="_blank" href="http://test.yjshen.org"><img src="flow.png" alt="" class="card-image" />
+
+            <div class="card-details">
+          <h2>F-L-O-W</h2>
+          <h3>The next generation of historical timeline platform</h3>
+          <p>Visualise data into infographics whether it is world history, biography or personal interests. Upload your own projects and combine them with others. This is a platform that generates a new vision for learning purposes.</p>
+          </div></a>
+        </div>
+      </div>
+
+      </div>
+
+      <p class="title-s ">Proficiency in UI and UX working flow</p>
+      <table width="100%" border="0"> <div style="margin-top:100px">
+        <tr>
+        <img src="wireframe_3.png" alt="Wireframe" class="img">
+        <img src="apps_1.png" alt="Wireframe" class="img">
+        <img src="flowchart_2.png" alt="Wireframe" class="img">
+        </tr>
+      </table>
+
+      <div class="text-row">
+        <div class="column-2">
+          <h2>Wireframing</h2>
+          <p>I design wireframes with Balsamiq Mockups 3. Rapid and flexible, allowing to discuss a project right away.</p>
+        </div>
+
+        <div class="column-2">
+          <h2>Platforms</h2>
+          <p>Design with RWD and grid system. Which can suit for any size of screens from lcd to mobile plateforms.</p>
+        </div>
+
+        <div class="column-2">
+          <h2>Flowcharting</h2>
+          <p> I'm fonfident with represent divergent concepts, then conerge on feasible to optimise conversation rates.</p>
+        </div>
+      </div>
+
+      <div>
+          <a class="example-image-link" href="process_1.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><p>See Process Here</p></a>
+          <div style="display:none;">
+          <a class="example-image-link" href="process_2.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."></a>
+          <a class="example-image-link" href="process_3.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."></a>
+          <a class="example-image-link" href="process_4.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."></a>
+      </div>
+
+
+      <div id='vimeo'>
+        <p class="title-s ">Motion Graphic and mobile mockup</p>
+        <iframe <iframe <iframe src="https://player.vimeo.com/video/251159690?autoplay=1&loop=1" width="400" height="784" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+
+      <div id="artrow">
+        <p class="title-s">Projects of Art and Sound</p>
+        <div id="artrow-container">
+
+          <div class="card">
+            <a target="_blank" href="http://yjshen.co.uk"><img src="DSC04798.jpg" alt="" class="card-image" />
+
+          <div class="card-details">
+            <h2>Works of Art</h2>
+            <h3>Art projects created at RCA</h3>
+            <p>The great idea of my art project is a furious at tempt at violating the idea of boundaries. I started from painting since college, and now I'm developing with any type of froms.</p>
+          </div></a>
+        </div>
+
+        <div class="card">
+          <a target="_blank" href="https://soundcloud.com/funkierauto/sets/maxi-kingdom-18"><img src="soundcloud.png" alt="" class="card-image" />
+
+        <div class="card-details">
+          <h2>Electronic Music</h2>
+          <h3>Sound Project</h3>
+          <p>I started it with making an instrument. Also got influenced by Fluxus.</p>
+        </div></a>
+      </div>
+      </div>
+
+
+
+
+      </div>
+
+
+
+        <div id="reference">
+          <p class="title-r">References</p>
+          <div id="container-reference">
+            <span class="sub-main">
+              <a target="_blank" href="https://goo.gl/epMFNP"><button class="button-one">Portfolio</button></a>
+            </span>
+
+
+            <span class="sub-main">
+              <a target="_blank" href="https://www.floorrmagazine.com/issue-11/yi-jie-shen"><button class="button-two">Interview</button></a>
+            </span>
+
+            <span class="sub-main">
+              <a href="https://goo.gl/hmRynS" target="_blank"><button class="button-three">CV</button></a>
+            </span>
+          </div>
+        </div>
+
+      <div>
+
+
+
+
+      <div id="emailrow">
+        <p class="emailtext">Did you like what you saw?</p>
+        <span class="hvr-pulse-grow"><a href="mailto:yichieh.shen@network.rca.ac.uk" class="button rollover">
+          <span class="roll-text">Email me!</span>
+          <span class="roll-text">Let's Go</span>
+        </a>
+      </div>
+
+    </div>
+
+    </div>
+
+    <div id="footer">
+      Copyright &copy; 2017 YJShen
+    </div>
+
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+  </div>
+
+  <
+  </body>
+
+</html>
